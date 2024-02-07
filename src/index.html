@@ -125,7 +125,7 @@
                   </button>
                   
                   <!-- Dropdown menu -->
-                  <div id="dropdownHover1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <div id="dropdownHover1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-44 dark:bg-gray-700" style="transform: translate3d(1252px, 42.8px, 0px);">
                       <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton1">
                         <li>
                           <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student Panel</a>
@@ -218,50 +218,64 @@
   
       
     <div class=" items-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-      <ul class="flex flex-col font-medium  md:p-0  border border-gray-100 rounded-lg bg-gray-50 md:space-x-0  md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:gap-4">
-        <li class="">
-          <a class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2  py-3 text-base font-medium" href="#" aria-current="page">Home</a>
+      
+
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
         </li>
-        <li class="">
-          <a class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2 py-3  text-base font-medium" href="#" aria-current="page">About</a>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
         </li>
-        <li class="">
-          <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover" class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base xl:px-3 px-2 py-3 text-center inline-flex items-center hover:bg-blue-500 hover:text-white" type="button">Departments<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Department <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
-            </button>
-  
+          </svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownHover2" class="z-10  hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ml-12 dark:bg-gray-700">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton2">
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Computer</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Civil</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Electrical</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Electronics</a>
-                </li>
-              </ul>
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-sm shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Computer</a>
+                  </li>
+                  <li aria-labelledby="dropdownNavbarLink">
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg></button>
+                    <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-44 dark:bg-gray-700 ">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                          </li>
+                          <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                </div>
             </div>
         </li>
-        <li class="">
-          <a href="#" aria-current="page" class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2 py-3 text-base font-medium"">Adminssion</a>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
         </li>
-        <li class="">
-          <a href="#" aria-current="page" class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2 py-3 text-base font-medium"">Facilities</a>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
         </li>
-        <li class="">
-          <a href="#" aria-current="page" class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2 py-3 text-base font-medium"">Gallery</a>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li>
-        <li class="">
-          <a href="#" aria-current="page" class="hover:bg-blue-500 hover:text-white block rounded-md xl:px-3 px-2 py-3 text-base font-medium"">Contact</a>
-        </li>
-        
       </ul>
 
     </div>
@@ -293,8 +307,10 @@
           <!-- <h1 class="pt-44 text-3xl text-gray-900 font-bold text-center">আমাদের কথা</h1> -->
         </div>
         <div class="px-4">
+        <div class="border-b-2 mb-4">
           <h1 class=" text-2xl pt-4 text-gray-700 font-bold text-center">আমাদের কথা</h1>
-          <p class="pt-4 pb-4 text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+          <p class="pt-4 pb-4 text-base text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+        </div>
         <button class="flex gap-2 py-2 px-4 border bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
         </svg></button>
@@ -305,8 +321,10 @@
           <!-- <h1 class="pt-44 text-3xl text-gray-900 font-bold text-center">আমাদের কথা</h1> -->
         </div>
         <div class="px-4">
+        <div class="border-b-2 mb-4">
           <h1 class=" text-2xl pt-4 text-gray-700 font-bold text-center">আমাদের কথা</h1>
-          <p class="pt-4 pb-4 text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+          <p class="pt-4 pb-4 text-base text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+        </div>
         <button class="flex gap-2 py-2 px-4 border bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
         </svg></button>
@@ -317,8 +335,10 @@
           <!-- <h1 class="pt-44 text-3xl text-gray-900 font-bold text-center">আমাদের কথা</h1> -->
         </div>
         <div class="px-4">
+        <div class="border-b-2 mb-4">
           <h1 class=" text-2xl pt-4 text-gray-700 font-bold text-center">আমাদের কথা</h1>
-          <p class="pt-4 pb-4 text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+          <p class="pt-4 pb-4 text-base text-justify">বর্তমান যুগ বিজ্ঞান ও প্রযুক্তির যুগ । এ শতাব্দীতে বিজ্ঞান ও তথ্য প্রযুক্তির ক্ষেত্রে যে উন্নতি সাধিত হয়েছে তা সমগ্র বিশ্বকে একটি গ্লোবাল ভিলেজে পরিণত করেছে । আজকের এ বিশ্ব প্রতিযোগিতায় টিকে থেকে অর্থনৈতিক যুদ্ধে জয়ী হতে হলে আমাদের তরুণদের…</p>
+        </div>
         <button class="flex gap-2 py-2 px-4 border bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
         </svg></button>
@@ -333,56 +353,56 @@
 <div class="mx-auto max-w-6xl py-10 px-2">
   <h1 class="text-center text-4xl font-bold py-8 text-gray-900">OUR <span class="text-red-700">DEPARTMENTS</span></h1>
   <div class="md:grid grid-cols-4 gap-6">
-    <div class="shadow-lg pb-6 bg-white mb-4">
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4 px-2">
+      <img class="" src="./images/Picture.png" alt="">
+      <h4 class="text-center text-xl font-bold py-4 border-b-2 mb-4 text-gray-800">Electronics Department</h4>
+      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+      </svg></button>
+    </div>
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4 px-2">
+      <img class="" src="./images/Picture.png" alt="">
+      <h4 class="text-center text-xl font-bold py-4 border-b-2 mb-4 text-gray-800">Electronics Department</h4>
+      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+      </svg></button>
+    </div>
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4 px-2">
+      <img class="" src="./images/Picture.png" alt="">
+      <h4 class="text-center text-xl font-bold py-4 border-b-2 mb-4 text-gray-800">Electronics Department</h4>
+      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+      </svg></button>
+    </div>
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4 px-2">
+      <img class="" src="./images/Picture.png" alt="">
+      <h4 class="text-center text-xl font-bold py-4 border-b-2 mb-4 text-gray-800">Electronics Department</h4>
+      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+      </svg></button>
+    </div>
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4">
       <img class="" src="./images/Picture.png" alt="">
       <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
       <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
       </svg></button>
     </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4">
       <img class="" src="./images/Picture.png" alt="">
       <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
       <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
       </svg></button>
     </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4">
       <img class="" src="./images/Picture.png" alt="">
       <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
       <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
       </svg></button>
     </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
-      <img class="" src="./images/Picture.png" alt="">
-      <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
-      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-      </svg></button>
-    </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
-      <img class="" src="./images/Picture.png" alt="">
-      <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
-      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-      </svg></button>
-    </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
-      <img class="" src="./images/Picture.png" alt="">
-      <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
-      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-      </svg></button>
-    </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
-      <img class="" src="./images/Picture.png" alt="">
-      <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
-      <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-      </svg></button>
-    </div>
-    <div class="shadow-lg pb-6 bg-white mb-4">
+    <div class="shadow-lg rounded-sm pb-6 bg-white mb-4">
       <img class="" src="./images/Picture.png" alt="">
       <h4 class="text-center text-xl font-bold py-4 text-gray-800">Computer Science</h4>
       <button class="flex gap-2 py-2 px-4 border justify-center mx-auto bg-yellow-400 rounded-md hover:bg-yellow-500 text-gray-200">Read More<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -576,7 +596,7 @@
   <h1 class="font-extrabold text-xl md:text-4xl text-center pb-6">Frequently Asked <span class="text-red-600">Frequently Asked</span></h1>
   <div class="md:grid grid-cols-2 p-8">
     <div class=" mx-auto ">
-      <img src="./images/faq.png" class="pb-4 md:h-96 w-auto justify-center" alt="">
+      <img src="./images/faq.png" class="pb-4 h-96 w-auto justify-center" alt="">
     </div>
     <div class="">
         <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
@@ -654,7 +674,7 @@
   <h1 class="text-center font-bold text-3xl pt-2 pb-8">STUDNETS <span class="text-red-700">OPINIONS </span></h1>
   <div class="lg:grid grid-cols-3 gap-6 px-6 py-6">
 
-    <div class="flex flex-col p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
+    <div class="flex flex-col rounded-sm p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
         <img class="w-32 h-32 rounded-full " src="./images/user-1.png" alt="">
         <div class="flex items-center mx-auto py-4">
           <svg class="w-6 h-6 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -677,7 +697,7 @@
         <h6 class="pt-6 pb-2 text-gray-700 font-bold" href="#">আবুল হাসান</h6>
         <p class="text-sm font-light text-gray-500">ছাত্র</p>
    </div>
-    <div class="flex flex-col p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
+    <div class="flex flex-col rounded-sm p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
       <img class="w-32 h-32 rounded-full " src="./images/user-1.png" alt="">
       <div class="flex items-center mx-auto py-4">
         <svg class="w-6 h-6 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -700,7 +720,7 @@
       <h6 class="pt-6 pb-2 text-gray-700 font-bold" href="#">শেখ মোকাম্মেল হোসেন</h6>
       <p class="text-sm font-light text-gray-500">ছাত্র</p>
     </div>
-    <div class="flex flex-col p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
+    <div class="flex flex-col rounded-sm p-8 justify-center items-center text-center bg-gray-50 border-b border-gray-200 border-r text-gray-500 shadow-md mb-4">
         <img class="w-32 h-32 rounded-full " src="./images/user-1.png" alt="">
         <div class="flex items-center mx-auto py-4">
           <svg class="w-6 h-6 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
